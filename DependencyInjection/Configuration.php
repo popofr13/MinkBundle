@@ -52,10 +52,6 @@ class Configuration implements ConfigurationInterface
                 end()->
                 arrayNode('goutte')->
                     children()->
-                        arrayNode('zend_config')->
-                            useAttributeAsKey('key')->
-                            prototype('variable')->end()->
-                        end()->
                         arrayNode('server_parameters')->
                             useAttributeAsKey('key')->
                             prototype('variable')->end()->
